@@ -18,59 +18,93 @@
         <header>
             <div class="header-top">
                 <div class="logo"></div>
-                <div class="search-bar">
-                    <input type="search" placeholder="Search Items" />
-                    <button type="button"></button>
-                </div>
-                <div class="cart">
-                    <div class="cart-image"></div>
-                    <p>0 Items Added</p>
-                </div>
-                <div class="personal-area">
-                    <div class="userpic"></div>
-                    <p>Login or Sign Up</p>
+                <div class="header-container">
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search Items" />
+                        <div class="search-bar__button">
+                            <button class="search__btn" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart-image"></div>
+                        <p class="cart__para">0 Items Added</p>
+                    </div>
+                    <div class="personal-area">
+                        <div class="userpic"></div>
+                        <p class="personal-area__para">Login or Sign Up</p>
+                    </div>
                 </div>
             </div>
             <div class="header-bottom">
                 <nav>
-                    <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">About</a></li>
+                    <ul class="nav">
+                        <li><a class="nav__title" href="#">Features</a></li>
+                        <li><a class="nav__title" href="#">Products</a></li>
+                        <li><a class="nav__title" href="#">Blog</a></li>
+                        <li><a class="nav__title" href="#">About</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <section class="cover">
             <div class="cover-info_left">
-                <h2>Discover Our Latest Products</h2>
-                <p>
+                <h1 class="cover__title">Discover Our Latest Products</h1>
+                <p class="cover__para">
                     Lorem ipsum is a placeholder text commonly used to
                     demonstrate the visual form of a product
                 </p>
-                <button type="button">Buy Now</button>
+                <button class="cover__btn" type="button">Buy Now</button>
                 <div class="rewiews">
-                    <div class="userpics"></div>
-                    <p>15k Well Reviews</p>
+                    <div class="userpics">
+                        <img src="/assets/images/person1.png" alt="person" />
+                        <img
+                            class="rewiews__img"
+                            src="/assets/images/person2.png"
+                            alt="person"
+                        />
+                        <img
+                            class="rewiews__img"
+                            src="/assets/images/person3.png"
+                            alt="person"
+                        />
+                        <img
+                            class="rewiews__img"
+                            src="/assets/images/person4.png"
+                            alt="person"
+                        />
+                    </div>
+                    <p class="rewiews__para">15k Well Reviews</p>
                 </div>
             </div>
             <div class="cover-info_right">
+                <div class="star-pic_top"></div>
                 <div class="info-play">
-                    <div class="userpic-video"></div>
-                    <p>Play Video</p>
+                    <div class="userpic-video">
+                        <img
+                            class="userpic-video__img"
+                            src="/assets/images/image1.png"
+                            alt=""
+                        />
+                    </div>
+                    <p class="info-play__para">Play Video</p>
                 </div>
                 <div class="info-headphones">
-                    <div class="star-pic"></div>
-                    <p>Red Beats MI9c2zm/a</p>
-                    <img src="" alt="Red Beats" class="headphones-image" />
-                    <div class="star-pic"></div>
+                    <p class="info-headphones__para">Red Beats MI9c2zm/a</p>
+                    <div class="background-headphones">
+                        <img
+                            src="/assets/images/headphones.svg"
+                            alt="Red Beats"
+                            class="headphones-image"
+                        />
+                        <p class="background-headphones__para">50$</p>
+                    </div>
                 </div>
+                <div class="star-pic_bottom"></div>
             </div>
         </section>
         <section class="featured-products">
             <div class="featured-products_left">
-                <h1>Apple wireless Airpod</h1>
+                <h2>Apple wireless Airpod</h2>
                 <div class="earphones-pics">
                     <img src="" alt="" />
                     <img src="" alt="" />
