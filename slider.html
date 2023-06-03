@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                background-color: #000;
+            }
+
+            #wrapper {
+                width: 100%;
+                max-width: 578px;
+                position: relative;
+            }
+
+            #carousel {
+                overflow: auto;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+            }
+
+            #carousel::-webkit-scrollbar {
+                height: 0;
+            }
+
+            #prev,
+            #next {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                background: white;
+                border: none;
+                padding: 8px;
+                border-radius: 50%;
+                outline: 0;
+                cursor: pointer;
+                position: absolute;
+            }
+
+            #prev {
+                top: 50%;
+                left: 0;
+                transform: translate(50%, -50%);
+                display: none;
+            }
+
+            #next {
+                top: 50%;
+                right: 0;
+                transform: translate(-50%, -50%);
+            }
+
+            #content {
+                display: grid;
+                grid-gap: 16px;
+                grid-auto-flow: column;
+                margin: auto;
+                box-sizing: border-box;
+            }
+
+            .item {
+                width: 180px;
+                height: 180px;
+                background: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="carousel">
+                <div id="content">
+                    <img class="item" src="/assets/images/earphones.png" />
+                    <img src="/assets/images/earphones2.png" class="item" />
+                    <img src="/assets/images/earphones3.png" class="item" />
+                    <img src="/assets/images/added.svg" class="item" />
+                    <img src="/assets/images/Mask-group2.png" class="item" />
+                    <img src="/assets/images/image1.png" class="item" />
+                    <img src="/assets/images/image 15.svg" class="item" />
+                    <img src="/assets/images/earphones.png" class="item" />
+                    <img src="/assets/images/earphones.png" class="item" />
+                </div>
+            </div>
+            <button id="prev">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                        d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                    />
+                </svg>
+            </button>
+            <button id="next">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                        d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                    />
+                </svg>
+            </button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
