@@ -205,7 +205,8 @@ a {
     line-height: 38px;
     margin-top: 0;
 }
-.featured-products {
+.featured-products,
+.cover-carousel__item {
     display: flex;
     padding: 3.5rem 5.3rem;
     background-color: #845ec2;
@@ -231,10 +232,12 @@ a {
 .earphones-pics {
     margin-top: -35px;
 }
-.featured-products_right {
+.featured-products_right,
+.product-info {
     margin-left: 77px;
 }
-.featured-products__title_right {
+.featured-products__title_right,
+.product-title {
     font-weight: 600;
     font-size: 44px;
     line-height: 54px;
@@ -255,18 +258,24 @@ a {
     font-weight: 600;
     line-height: 38px;
 }
-.featured-products__para {
+.featured-products__para,
+.product-para {
     width: 483px;
     font-weight: 500;
     font-size: 21px;
     line-height: 35px;
 }
-.featured-products__buttons {
+.product-para {
+    width: 584px;
+}
+.featured-products__buttons,
+.new-launches__buttons {
     display: flex;
     justify-content: space-between;
     width: 427px;
 }
-.featured-products__btn {
+.featured-products__btn,
+.new-launches__btn {
     background-color: transparent;
     border: none;
     color: white;
@@ -276,10 +285,13 @@ a {
     cursor: pointer;
 }
 .cover__btn:hover,
-.personal-area:hover {
+.personal-area:hover,
+.card__btn:hover {
     background-color: #0d8960;
 }
-.top-sellers__title {
+.top-sellers__title,
+.trending-earphones__title,
+.new-launches__title {
     font-weight: 600;
     font-size: 44px;
     line-height: 54px;
@@ -292,6 +304,172 @@ a {
     font-size: 26px;
     line-height: 32px;
 }
+.sections__title_selected {
+    text-align: center;
+    width: 177px;
+    border-radius: 10px;
+    color: white;
+    background-color: #10b981;
+    cursor: pointer;
+}
+.sections__title {
+    margin-left: 50px;
+    cursor: pointer;
+}
 .carousel {
     display: flex;
+    margin: 3.5rem 5.3rem;
+}
+#wrapper {
+    width: 100%;
+    max-width: fit-content;
+    position: relative;
+}
+
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+    height: 0;
+}
+#prev,
+#next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+#prev {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+#next {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 361px;
+    background-color: #ecfef4;
+    border-radius: 15px;
+}
+.checked {
+    color: orange;
+}
+.star-rating {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    width: 319px;
+    height: 164px;
+    margin: 0 25px 25px 25px;
+    background-color: white;
+    border-radius: 15px;
+}
+.carousel__item_first,
+.carousel__item_second,
+.carousel__item_third {
+    margin-left: 89px;
+}
+
+.card_second {
+    background-color: #c9f2ff;
+}
+.card_third {
+    background-color: #e5d5ff;
+}
+.carousel__item {
+    display: flex;
+    flex-direction: column;
+    width: 361px;
+}
+.carousel__image {
+    width: 241px;
+    height: 241px;
+}
+.card-title,
+.star-rating__desc,
+.star-rating__price {
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 21px;
+}
+.star-rating__desc {
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 11px;
+    color: #888888;
+}
+.star-rating__price {
+    font-weight: 600;
+}
+.card__btn {
+    height: 70px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 25px;
+    border: none;
+    background-color: #10b981;
+    color: white;
+    cursor: pointer;
+}
+.product-image_first {
+    margin-bottom: 70px;
+}
+.product-image_second {
+    margin-left: 30px;
+}
+.new-launches__buttons {
+    width: 500px;
+}
+.card__colours {
+    margin-top: 5px;
+    display: flex;
+}
+
+.card__colour {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    padding: 0;
+}
+.card__colour:not(:last-child) {
+    margin-right: 35px;
+}
+.card__colour.card__colour--black {
+    background-color: black;
+}
+.card__colour.card__colour--yellow {
+    background-color: #fff500;
+}
+
+.card__colour.card__colour--blue {
+    background-color: #4484ff;
+}
+ul.card__colours {
+    padding-left: 0;
+    padding-bottom: 35px;
 }
