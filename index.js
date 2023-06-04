@@ -1,4 +1,5 @@
 const gap = 9;
+const listItems = document.querySelectorAll('.card__colour');
 
 const carousel = document.getElementById("carousel"),
     content = document.getElementById("content"),
@@ -26,3 +27,13 @@ prev.addEventListener("click", e => {
 
 let width = carousel.offsetWidth;
 window.addEventListener("resize", e => (width = carousel.offsetWidth));
+
+
+listItems.forEach(item => {
+    item.addEventListener('click', () => {
+        listItems.forEach(item => {
+            item.classList.remove('active');
+        });
+        item.classList.add('active');
+    });
+});

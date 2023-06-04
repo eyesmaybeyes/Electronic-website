@@ -286,7 +286,8 @@ a {
 }
 .cover__btn:hover,
 .personal-area:hover,
-.card__btn:hover {
+.card__btn:hover,
+.footer__btn:hover {
     background-color: #0d8960;
 }
 .top-sellers__title,
@@ -461,15 +462,51 @@ a {
 }
 .card__colour.card__colour--black {
     background-color: black;
+    cursor: pointer;
 }
 .card__colour.card__colour--yellow {
     background-color: #fff500;
+    cursor: pointer;
 }
 
 .card__colour.card__colour--blue {
     background-color: #4484ff;
+    cursor: pointer;
 }
 ul.card__colours {
     padding-left: 0;
     padding-bottom: 35px;
+}
+li.active {
+    border: 2px solid red;
+}
+.inner-footer {
+    margin: 8rem 11.6rem;
+}
+.footer_btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer__para {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.3px;
+}
+.footer__btn {
+    height: 50px;
+    width: 175px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    border: none;
+    background-color: #10b981;
+    color: white;
+    cursor: pointer;
+    margin-left: 40px;
+}
+a {
+    color: black;
 }
