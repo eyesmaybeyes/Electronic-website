@@ -33,10 +33,10 @@ body {
 
 .search-bar__button {
     border-radius: 0 10px 10px 0;
-    border: none;
     padding: 14px;
     background-color: #10b981;
     cursor: pointer;
+    border: none;
 }
 .search-btn__image {
     cursor: pointer;
