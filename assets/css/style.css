@@ -36,7 +36,7 @@ body {
     padding: 14px;
     background-color: #10b981;
     cursor: pointer;
-    border: none;
+    border: 0;
 }
 .search-btn__image {
     cursor: pointer;
