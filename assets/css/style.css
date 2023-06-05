@@ -8,7 +8,6 @@ body {
     margin: 3.5rem 5.3rem;
 }
 .logo {
-    background-image: url(/assets/images/logo.svg);
     height: 38px;
     width: 173px;
 }
@@ -34,20 +33,15 @@ body {
 
 .search-bar__button {
     border-radius: 0 10px 10px 0;
+    border: none;
     padding: 14px;
     background-color: #10b981;
     cursor: pointer;
 }
-.search__btn {
-    background-image: url(/assets/images/search-Filled.svg);
-    height: 18px;
-    width: 18px;
-    border: none;
-    background-color: #10b981;
+.search-btn__image {
     cursor: pointer;
 }
 .cart-image {
-    background-image: url(/assets/images/added.svg);
     height: 24px;
     width: 24px;
 }
@@ -65,7 +59,6 @@ body {
     margin-left: 8%;
 }
 .userpic {
-    background-image: url(/assets/images/login.svg);
     width: 15.5px;
     height: 20.5px;
 }
@@ -159,7 +152,6 @@ a {
 }
 .star-pic_top,
 .star-pic_bottom {
-    background-image: url(/assets/images/star.svg);
     height: 53px;
     width: 53px;
 }
