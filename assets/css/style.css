@@ -126,13 +126,35 @@ a {
     color: white;
     cursor: pointer;
 }
+.wheel {
+    position: relative;
+    height: 300px;
+}
+
+.wheel__word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.wheel__letter {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 0;
+    transform-origin: 0 100%;
+    padding-bottom: 150px;
+    font-size: 2em;
+}
 .rewiews {
     display: flex;
     align-items: center;
     margin-top: 100px;
 }
-/* .userpics {
-} */
+
 .rewiews__para {
     font-weight: 500;
     font-size: 26px;
@@ -178,8 +200,8 @@ a {
 }
 .info-headphones__para {
     font-weight: 600;
-    /* font-size: 40px;
-    line-height: 49px; */
+    font-size: 40px;
+    line-height: 49px;
 }
 .background-headphones {
     background-color: #ecfef4;
