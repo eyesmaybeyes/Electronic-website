@@ -6,6 +6,32 @@ const carousel = document.getElementById("carousel"),
     next = document.getElementById("next"),
     prev = document.getElementById("prev");
 
+const rotateBetweenWords = (value) => {
+    const words = document.querySelectorAll('.wheel__word')
+
+    let deg = 263;
+
+    for (let word of words) {
+        word.style.transform = `rotate(${deg}deg)`
+        deg += value
+    }
+}
+
+const rotateBetweenLetters = (value) => {
+    const letters = document.querySelectorAll('.wheel__letter')
+
+    let deg = 0
+
+    for (let letter of letters) {
+        letter.style.transform = `rotate(${deg}deg)`
+        deg += value
+    }
+
+}
+
+rotateBetweenWords(3)
+rotateBetweenLetters(9)
+
 next.addEventListener("click", e => {
     carousel.scrollBy(width + gap, 0);
     if (carousel.scrollWidth !== 0) {
@@ -37,30 +63,3 @@ listItems.forEach(item => {
         item.classList.add('active');
     });
 });
-// расстояние между словами
-const rotateBetweenWords = (value) => {
-    const words = document.querySelectorAll('.wheel__word')
-
-    let deg = 263;
-
-    for (let word of words) {
-        word.style.transform = `rotate(${deg}deg)`
-        deg += value
-    }
-}
-
-// расстояние между буквами
-const rotateBetweenLetters = (value) => {
-    const letters = document.querySelectorAll('.wheel__letter')
-
-    let deg = 0
-
-    for (let letter of letters) {
-        letter.style.transform = `rotate(${deg}deg)`
-        deg += value
-    }
-
-}
-
-rotateBetweenWords(3)
-rotateBetweenLetters(9)
